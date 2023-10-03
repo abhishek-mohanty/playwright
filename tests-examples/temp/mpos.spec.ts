@@ -38,6 +38,7 @@ test.describe("Policy Issuance", () => {
         await page.locator('.sc-bOCYYb > span > img').click();
         //await page.waitForTimeout(30000)
         let url = await clipboard.read();
+        page.context().storageState()
         const userContext = await browser.newContext({ storageState: 'playwright/.auth/auth.json' });
         const userPage = await userContext.newPage();
         await userPage.goto(url)

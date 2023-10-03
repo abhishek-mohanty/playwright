@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ackc": "npx playwright test accelerator.spec.ts"
+    "ackc": "npx playwright test tests/accelerator"
   },
   "keywords": [],
   "author": "",
